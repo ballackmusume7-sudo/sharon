@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University of Kabianga - Register</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+        }
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px;
+        }
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        .container {
+            width: 60%;
+            margin: 20px auto;
+            background-color: white;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        select,
+        input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>University of Kabianga</h1>
+        <p>Registration Page</p>
+    </header>
+
+    <nav>
+        <a href="assignment.html">Home</a>
+        <a href="register.html">REGISTER</a>
+        <a href="next.html">Media</a>
+        <a href="about.html">About</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <div class="container">
+        <h2>Student Registration Form</h2>
+        <form action="submit_registration.php" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required placeholder="Enter your full name">
+            </div>
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required placeholder="Enter your email">
+            </div>
+            <div class="form-group">
+                <label for="course">Choose Course</label>
+                <select id="course" name="course" required>
+                    <option value="Education Arts">Education Arts</option>
+                    <option value="Education Science">Education Science</option>
+                    <option value="Education with guidance and counselling">Education with guidance and counselling</option>
+                    <option value="Computer Science">Computer Science</option>
+                    <option value="Actuarial Science">Actuarial Science</option>
+                    <option value="BIT">BIT</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="school">Choose School</label>
+                <select id="school" name="school" required>
+                    <option value="Education">School of Education</option>
+                    <option value="Science and Technology">School of Science and Technology</option>
+                </select>
+            </div>
+            <input type="submit" value="Register">
+        </form>
+    </div>
+
+</body>
+</html>
